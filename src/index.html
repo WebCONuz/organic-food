@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <!-- HEADER SECTION -->
+    <!-- HEADER SECTION START -->
     <header class="py-12 shadow-md bg-white">
       <div class="container mx-auto">
         <nav class="nav flex justify-around items-center h-14">
@@ -88,5 +88,71 @@
         </nav>
       </div>
     </header>
+    <!-- HEADER SECTION END -->
+
+    <!-- MODAL WINDOW START -->
+    <div
+      class="modal-window bg-[#000000c3] w-full min-h-screen fixed top-0 z-10"
+    >
+      <div
+        class="modal-content w-[600px] bg-white mx-auto mt-20 rounded-xl overflow-hidden"
+      >
+        <div class="modal-header bg-slate-200 p-4">
+          <h4 class="text-2xl font-bold uppercase text-slate-800 text-center">
+            Registration Form
+          </h4>
+        </div>
+        <div class="modal-body bg-white my-8 flex justify-center items-center">
+          <form action="#" class="min-w-[85%]">
+            <label for="fullname" class="w-full">
+              <p class="mb-2">Fullname <span class="text-red-600">*</span></p>
+              <input
+                type="text"
+                class="w-full mx-auto p-3 mb-4 focus:ring-4 focus:ring-sky-400 rounded-md focus:outline-none border-solid border-2 border-slate-300 focus:border-white"
+                placeholder="Enter your fullname"
+                id="fullname"
+              />
+            </label>
+
+            <label for="tell" class="w-full">
+              <p class="mb-2">
+                Phone number <span class="text-red-600">*</span>
+              </p>
+              <input
+                type="text"
+                class="w-full mx-auto p-3 mb-4 focus:ring-4 focus:ring-sky-400 rounded-md focus:outline-none border-solid border-2 border-slate-300 focus:border-white"
+                placeholder="Enter your phone number"
+                id="tell"
+              />
+            </label>
+
+            <label for="password" class="w-full">
+              <p class="mb-2">Password <span class="text-red-600">*</span></p>
+              <input
+                type="password"
+                class="w-full mx-auto p-3 mb-4 focus:ring-4 focus:ring-sky-400 rounded-md focus:outline-none border-solid border-2 border-slate-300 focus:border-white"
+                placeholder="Enter your password"
+                id="password"
+              />
+            </label>
+
+            <button
+              type="submit"
+              class="btn bg-green-600 mt-4 py-3 rounded-md text-white uppercase hover:bg-green-700 duration-200 focus:ring-4 focus:ring-green-400 block w-full"
+            >
+              Sign up
+            </button>
+          </form>
+        </div>
+        <div class="modal-footer bg-slate-300 text-right p-3">
+          <button
+            class="bg-red-600 py-2 px-4 text-white rounded-md font-bold hover:bg-red-700 focus:ring-4 focus:ring-red-400 duration-200"
+          >
+            CLOSE
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL WINDOW END -->
   </body>
 </html>
