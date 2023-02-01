@@ -24,25 +24,27 @@
   </head>
   <body>
     <!-- HEADER SECTION START -->
-    <header class="py-12 shadow-md bg-white">
-      <div class="container mx-auto">
-        <nav class="nav flex justify-around items-center h-14">
-          <ul class="nav__list flex justify-between w-1/4">
-            <li class="nav__list--item">
+    <header class="py-4 sm:py-6 lg:py-12 shadow-md bg-white">
+      <div class="container mx-auto px-3 sm:px-3 md:px-0">
+        <nav
+          class="nav flex justify-between sm:justify-between md:justify-around items-center h-14"
+        >
+          <ul class="nav__list hidden sm:hidden md:hidden lg:flex">
+            <li class="nav__list--item mr-8">
               <a
                 href="#"
                 class="nav__list--item-link hover:text-green-600 active:text-slate-400 duration-200"
                 >About Us</a
               >
             </li>
-            <li class="nav__list--item">
+            <li class="nav__list--item mr-8">
               <a
                 href="#"
                 class="nav__list--item-link hover:text-green-600 active:text-slate-400 duration-200"
                 >Services</a
               >
             </li>
-            <li class="nav__list--item">
+            <li class="nav__list--item mr-8">
               <a
                 href="#"
                 class="nav__list--item-link hover:text-green-600 active:text-slate-400 duration-200"
@@ -65,13 +67,13 @@
             />
           </a>
           <ul class="nav__menu flex justify-between items-center">
-            <li class="nav_menu--item">
+            <li class="nav_menu--item hidden sm:hidden md:block">
               <span
                 class="bg-green-100 h-10 w-10 flex justify-center items-center rounded-full"
                 ><i class="bx bx-search text-xl"></i
               ></span>
             </li>
-            <li class="nav_menu--item ml-8">
+            <li class="nav_menu--item ml-8 hidden sm:hidden md:block">
               <span
                 class="bg-green-100 h-10 w-10 flex justify-center items-center rounded-full"
                 ><i class="bx bx-cart text-xl"></i
@@ -79,7 +81,7 @@
             </li>
             <li class="nav_menu--item ml-8">
               <button
-                class="bg-green-600 py-2 px-6 rounded-lg text-white hover:bg-green-700 duration-200 active:bg-green-800"
+                class="register-btn bg-green-600 py-2 px-6 rounded-lg text-white hover:bg-green-700 duration-200 active:bg-green-800"
               >
                 Register Now
               </button>
@@ -92,10 +94,10 @@
 
     <!-- MODAL WINDOW START -->
     <div
-      class="modal-window bg-[#000000c3] w-full min-h-screen fixed top-0 z-10"
+      class="modal-window bg-[#000000c3] w-full min-h-screen fixed top-0 z-10 hidden duration-300"
     >
       <div
-        class="modal-content w-[600px] bg-white mx-auto mt-20 rounded-xl overflow-hidden"
+        class="modal-content w-[40%] bg-white mx-auto mt-20 rounded-xl overflow-hidden duration-200"
       >
         <div class="modal-header bg-slate-200 p-4">
           <h4 class="text-2xl font-bold uppercase text-slate-800 text-center">
@@ -146,7 +148,7 @@
         </div>
         <div class="modal-footer bg-slate-300 text-right p-3">
           <button
-            class="bg-red-600 py-2 px-4 text-white rounded-md font-bold hover:bg-red-700 focus:ring-4 focus:ring-red-400 duration-200"
+            class="close-btn bg-red-600 py-2 px-4 text-white rounded-md font-bold hover:bg-red-700 focus:ring-4 focus:ring-red-400 duration-200"
           >
             CLOSE
           </button>
@@ -154,5 +156,8 @@
       </div>
     </div>
     <!-- MODAL WINDOW END -->
+
+    <!-- script files -->
+    <script src="./script/app.js"></script>
   </body>
 </html>
