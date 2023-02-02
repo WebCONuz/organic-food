@@ -19,6 +19,14 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Rosario:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <!-- owl-carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- main css -->
     <link rel="stylesheet" href="./styles.css" />
   </head>
@@ -157,7 +165,384 @@
     </div>
     <!-- MODAL WINDOW END -->
 
+    <!-- MAIN SECTION START -->
+    <main>
+      <section class="intro bg-green-50">
+        <div class="container mx-auto px-6 relative">
+          <img
+            src="./images/fresh-melientha.png"
+            alt="melientha"
+            class="absolute left-12 -top-10"
+          />
+          <div class="intro__wrapper">
+            <h1
+              class="text-6xl text-center font-bold max-w-[783px] pt-[93px] mx-auto leading-[90px]"
+            >
+              Organic Fruit & Vegetables
+            </h1>
+            <p
+              class="text-center text-[#555] text-lg max-w-[637px] mx-auto mt-7 leading-8"
+            >
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley...
+            </p>
+          </div>
+          <div
+            class="intro__link mx-auto flex items-center justify-center mt-10"
+          >
+            <a href="#" class="text-lg"> Order Now</a>
+            <div
+              class="w-[60px] h-[60px] bg-green-600 hover:bg-green-700 duration-200 text-white flex items-center justify-center text-2xl rounded-full ml-4"
+            >
+              <img
+                src="./images/arrow-icon.svg"
+                alt="arrow-icon"
+                class="w-[30px]"
+              />
+            </div>
+          </div>
+          <div class="intro__product flex justify-around">
+            <img
+              src="./images/vegetables-fruits.png"
+              alt="intro-img"
+              class="w-[862px]"
+            />
+            <div class="intro__product--info flex flex-col">
+              <div
+                class="card hover:shadow-md duration-200 bg-white flex items-center py-5 px-10 rounded-md mb-8"
+              >
+                <div
+                  class="w-[56px] h-[56px] rounded-full flex justify-center items-center bg-green-100 mr-5"
+                >
+                  <img src="./images/user-icon.svg" alt="user-icon" />
+                </div>
+                <div>
+                  <h3 class="text-5xl font-light">30K</h3>
+                  <p class="text-lg mt-1 text-center">User Order</p>
+                </div>
+              </div>
+              <div
+                class="card hover:shadow-md duration-200 bg-white flex items-center py-5 px-10 rounded-md mb-8"
+              >
+                <div
+                  class="w-[56px] h-[56px] rounded-full flex justify-center items-center bg-green-100 mr-5"
+                >
+                  <img src="./images/star-icon.svg" alt="star-icon" />
+                </div>
+                <div>
+                  <h3 class="text-5xl font-light">20K</h3>
+                  <p class="text-lg mt-1 text-center">Reviews(4.8)</p>
+                </div>
+              </div>
+              <div
+                class="card hover:shadow-md duration-200 bg-white flex items-center py-5 px-10 rounded-md mb-8"
+              >
+                <div
+                  class="w-[56px] h-[56px] rounded-full flex justify-center items-center bg-green-100 mr-5"
+                >
+                  <img src="./images/sweets-icon.svg" alt="sweets-icon" />
+                </div>
+                <div>
+                  <h3 class="text-5xl font-light">300</h3>
+                  <p class="text-lg mt-1 text-center">Items</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services pt-36 pb-36">
+        <div class="container mx-auto px-6 relative">
+          <img
+            src="./images/line.png"
+            alt="line"
+            class="absolute right-0 -top-40 -z-10"
+          />
+          <div class="services__title">
+            <h2 class="text-6xl font-bold max-w-[671px] leading-[90px]">
+              Why we are the Best?
+            </h2>
+            <p class="text-[#555] text-lg max-w-[671px] mt-7 leading-8">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley...
+            </p>
+          </div>
+          <div class="services__wrapper flex justify-between">
+            <ul class="w-[40%]">
+              <li
+                class="card flex items-center px-16 py-10 hover:bg-green-200 duration-200 rounded-lg my-4"
+              >
+                <div
+                  class="w-[80px] h-[80px] rounded-full bg-green-100 flex justify-center items-center mr-6"
+                >
+                  <img src="./images/delivery-man-icon.svg" alt="icon" />
+                </div>
+                <div class="w-4/5">
+                  <h4 class="font-bold text-xl mb-2">
+                    Fasted delivery Service
+                  </h4>
+                  <p class="text-sm text-slate-500">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                </div>
+              </li>
+              <li
+                class="card flex items-center px-16 py-10 hover:bg-green-200 duration-200 rounded-lg my-4"
+              >
+                <div
+                  class="w-[80px] h-[80px] rounded-full bg-green-100 flex justify-center items-center mr-6"
+                >
+                  <img src="./images/delivery-man-icon.svg" alt="icon" />
+                </div>
+                <div class="w-4/5">
+                  <h4 class="font-bold text-xl mb-2">
+                    Fasted delivery Service
+                  </h4>
+                  <p class="text-sm text-slate-500">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                </div>
+              </li>
+              <li
+                class="card flex items-center px-16 py-10 hover:bg-green-200 duration-200 rounded-lg my-4"
+              >
+                <div
+                  class="w-[80px] h-[80px] rounded-full bg-green-100 flex justify-center items-center mr-6"
+                >
+                  <img src="./images/delivery-man-icon.svg" alt="icon" />
+                </div>
+                <div class="w-4/5">
+                  <h4 class="font-bold text-xl mb-2">
+                    Fasted delivery Service
+                  </h4>
+                  <p class="text-sm text-slate-500">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                </div>
+              </li>
+              <li class="flex justify-center">
+                <img
+                  src="./images/arrow-green-icon.svg"
+                  alt="arrow-green-icon"
+                />
+              </li>
+            </ul>
+            <div class="w-[40%]">
+              <img src="./images/bola.png" alt="service-img" class="w-full" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="special pt-20 pb-36 bg-green-50 relative">
+        <img
+          src="./images/fresh-melientha.png"
+          alt="melientha"
+          class="absolute bottom-0 right-0"
+        />
+        <div class="container px-6 mx-auto">
+          <div class="special__wrapper flex justify-between">
+            <div class="">
+              <img
+                src="./images/special-img.jpg"
+                alt="special-img"
+                class="w-[600px] rounded-md"
+              />
+            </div>
+            <div class="w-1/2">
+              <h2 class="text-6xl font-bold max-w-[671px] leading-[90px]">
+                Explor Our Special Items
+              </h2>
+              <p class="text-[#555] text-lg max-w-[671px] mt-7 leading-8">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a
+                galley...
+              </p>
+              <div class="mx-auto flex items-center mt-10">
+                <a href="#" class="text-lg">Explor Now</a>
+                <div
+                  class="w-[60px] h-[60px] bg-green-600 hover:bg-green-700 duration-200 text-white flex items-center justify-center text-2xl rounded-full ml-4"
+                >
+                  <img
+                    src="./images/arrow-icon.svg"
+                    alt="arrow-icon"
+                    class="w-[30px]"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="customers pt-24 pb-16">
+        <div class="container mx-auto px-6">
+          <div class="customers__top flex justify-between">
+            <div class="w-1/2">
+              <h2 class="text-6xl font-bold max-w-[671px] leading-[90px] mb-8">
+                What Our Customers About Us saying
+              </h2>
+              <ul class="customer-slider owl-carousel">
+                <li>
+                  <p class="text-[#555] text-lg mt-7 leading-8 mb-10">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularis
+                  </p>
+                  <h4 class="text-3xl text-[#222] leading-9 mb-5">
+                    Ahmed Hridoy
+                  </h4>
+                  <div class="star-icons flex mb-6">
+                    <i class="bx bxs-star text-yellow-400 text-3xl"></i>
+                    <i class="bx bxs-star text-yellow-400 text-3xl"></i>
+                    <i class="bx bxs-star text-yellow-400 text-3xl"></i>
+                    <i class="bx bxs-star text-yellow-400 text-3xl"></i>
+                    <i class="bx bxs-star-half text-yellow-400 text-3xl"></i>
+                  </div>
+                </li>
+                <li>
+                  <p class="text-[#555] text-lg mt-7 leading-8 mb-10">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularis
+                  </p>
+                  <h4 class="text-3xl text-[#222] leading-9 mb-5">
+                    Ahmed Hridoy
+                  </h4>
+                  <div class="star-icons flex mb-6">
+                    <i class="bx bxs-star text-yellow-400 text-3xl"></i>
+                    <i class="bx bxs-star text-yellow-400 text-3xl"></i>
+                    <i class="bx bxs-star text-yellow-400 text-3xl"></i>
+                    <i class="bx bxs-star text-yellow-400 text-3xl"></i>
+                    <i class="bx bxs-star-half text-yellow-400 text-3xl"></i>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="w-[45%]">
+              <div
+                class="w-[500px] h-[500px] rounded-full bg-green-100 relative overflow-hidden ml-auto"
+              >
+                <img
+                  src="./images/man.png"
+                  alt="man"
+                  class="w-100 absolute bottom-0 left-1/2 -translate-x-1/2"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="customers__bottom flex py-24">
+            <div class="w-1/3 border relative">
+              <img
+                src="./images/tell.png"
+                alt="tell"
+                class="absolute left-1/2 -translate-x-1/2 z-10"
+              />
+              <img
+                src="./images/tell.png"
+                alt="tell"
+                class="absolute left-1/3 -translate-x-1/2 z-0 scale-90"
+              />
+            </div>
+            <div class="w-2/3 border">
+              <a
+                href="#"
+                class="px-6 py-2 bg-green-100 capitalize rounded-[25px] inline-block"
+                >download app</a
+              >
+              <h2
+                class="text-6xl font-bold max-w-[662px] leading-[90px] mb-8 mt-4"
+              >
+                Simple Way To Order Your Organic Fruit
+              </h2>
+              <p class="text-[#555] text-lg max-w-[574px] mt-7 leading-8">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer...
+              </p>
+              <div class="flex mt-10">
+                <a href="#" class="mr-8">
+                  <img src="./images/App Store - eng.png" alt="app store" />
+                </a>
+                <a href="#">
+                  <img src="./images/Google Play - eng.png" alt="google play" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- MAIN SECTION END -->
+
+    <!-- FOOTER SECTION START -->
+    <footer class="footer py-20 bg-green-50" id="footer">
+      <div class="container mx-auto px-6">
+        <ul class="footer_wrapper flex">
+          <li class="w-1/4">
+            <img src="./images/logo-icon.svg" alt="logo" />
+            <p class="text-[#555] text-lg max-w-[671px] mt-7 leading-8">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer...
+            </p>
+          </li>
+          <li class="w-1/4 pl-12">
+            <h3 class="mb-10 text-2xl font-bold">Navigation</h3>
+            <a href="#" class="mb-5 text-[#222] text-lg block">About Us</a>
+            <a href="#" class="mb-5 text-[#222] text-lg block">Blog</a>
+            <a href="#" class="mb-5 text-[#222] text-lg block">Menu</a>
+          </li>
+          <li class="w-1/4 pl-8">
+            <h3 class="mb-10 text-2xl font-bold">Resources</h3>
+            <a href="#" class="mb-5 text-[#222] text-lg block">Reviews</a>
+            <a href="#" class="mb-5 text-[#222] text-lg block">Service</a>
+            <a href="#" class="mb-5 text-[#222] text-lg block">Update News</a>
+          </li>
+          <li class="w-1/4">
+            <h3 class="mb-10 text-2xl font-bold">Contact Us</h3>
+            <p class="mb-5 text-[#222] text-lg block">
+              Email: oyasim@email.com
+            </p>
+            <div class="flex justify-between text-3xl w-1/2">
+              <a href="#" class="bx bxl-facebook"></a>
+              <a href="#" class="bx bxl-twitter"></a>
+              <a href="#" class="bx bxl-instagram"></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- FOOTER SECTION END -->
+
     <!-- script files -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="./script/app.js"></script>
   </body>
 </html>

@@ -31,3 +31,42 @@ body {
     transform: rotate(0);
   }
 }
+
+/* Customer slider ----------------------------- */
+.customer-slider .owl-stage-outer {
+  padding: 1rem 0;
+}
+.customer-slider .owl-nav button {
+  position: absolute;
+  bottom: 10%;
+  background-color: transparent !important;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  transition: 0.2s;
+  display: block;
+  opacity: 0.5;
+  border: 1px solid #09a66d !important;
+}
+.customer-slider .owl-nav button span {
+  display: none;
+}
+.customer-slider .owl-nav button:hover {
+  background-color: #09a66c77 !important;
+  border-color: #09a66c77 !important;
+  opacity: 1;
+}
+.customer-slider .owl-nav button.owl-prev {
+  right: 37%;
+  background-image: url("./images/arrow-left.svg") !important;
+  background-size: 25% !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+.customer-slider .owl-nav button.owl-next {
+  right: 25%;
+  background-image: url("./images/arrow-right.svg") !important;
+  background-size: 25% !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}

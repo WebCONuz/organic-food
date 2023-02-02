@@ -17,3 +17,17 @@ window.addEventListener("click", (e) => {
     modalWindow.classList.add("hidden");
   }
 });
+
+// Customer slider -----------------------------
+const owl1 = $(".customer-slider");
+owl1.owlCarousel({
+  loop: true,
+  nav: true,
+  dots: false,
+  margin: 10,
+  responsive: {
+    0: {
+      items: 1,
+    },
+  },
+});
