@@ -70,3 +70,10 @@ body {
   background-position: center !important;
   background-repeat: no-repeat !important;
 }
+
+.special {
+  background-image: url("./images/fresh-melientha.png");
+  background-repeat: no-repeat;
+  background-position: right 0% bottom 5%;
+  background-size: 35%;
+}

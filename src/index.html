@@ -175,7 +175,7 @@
 
     <!-- MAIN SECTION START -->
     <main>
-      <section class="intro bg-green-50">
+      <section class="intro bg-green-50 pb-16 md:pb-0">
         <div
           class="container mx-auto px-3 sm:px-3 md:px-5 lg:px-10 xl:px-24 relative"
         >
@@ -227,12 +227,12 @@
                 class="card hover:shadow-md duration-200 bg-white flex items-center py-5 px-10 mb-4 md:py-3 md:px-6 lg:py-5 lg:px-10 rounded-md lg:mb-8"
               >
                 <div
-                  class="w-[56px] h-[56px] rounded-full flex justify-center items-center bg-green-100 sm:mr-6 md:mr-4 lg:mr-5"
+                  class="w-[56px] h-[56px] rounded-full flex justify-center items-center bg-green-100 mr-6 md:mr-4 lg:mr-5"
                 >
                   <img src="./images/user-icon.svg" alt="user-icon" />
                 </div>
                 <div>
-                  <h3 class="sm:text-4xl lg:text-5xl font-light">30K</h3>
+                  <h3 class="text-4xl lg:text-5xl font-light">30K</h3>
                   <p class="text-lg mt-1 text-center">User Order</p>
                 </div>
               </div>
@@ -240,12 +240,12 @@
                 class="card hover:shadow-md duration-200 bg-white flex items-center py-5 px-10 mb-4 md:py-3 md:px-6 lg:py-5 lg:px-10 rounded-md lg:mb-8"
               >
                 <div
-                  class="w-[56px] h-[56px] rounded-full flex justify-center items-center bg-green-100 sm:mr-6 md:mr-4 lg:mr-5"
+                  class="w-[56px] h-[56px] rounded-full flex justify-center items-center bg-green-100 mr-6 md:mr-4 lg:mr-5"
                 >
                   <img src="./images/star-icon.svg" alt="star-icon" />
                 </div>
                 <div>
-                  <h3 class="md:text-4xl lg:text-5xl font-light">20K</h3>
+                  <h3 class="text-4xl lg:text-5xl font-light">20K</h3>
                   <p class="text-lg mt-1 text-center">Reviews(4.8)</p>
                 </div>
               </div>
@@ -253,12 +253,12 @@
                 class="card hover:shadow-md duration-200 bg-white flex items-center py-5 px-10 mb-4 md:py-3 md:px-6 lg:py-5 lg:px-10 rounded-md lg:mb-8"
               >
                 <div
-                  class="w-[56px] h-[56px] rounded-full flex justify-center items-center bg-green-100 sm:mr-6 md:mr-4 lg:mr-5"
+                  class="w-[56px] h-[56px] rounded-full flex justify-center items-center bg-green-100 mr-6 md:mr-4 lg:mr-5"
                 >
                   <img src="./images/sweets-icon.svg" alt="sweets-icon" />
                 </div>
                 <div>
-                  <h3 class="md:text-4xl lg:text-5xl font-light">300</h3>
+                  <h3 class="text-4xl lg:text-5xl font-light">300</h3>
                   <p class="text-lg mt-1 text-center">Items</p>
                 </div>
               </div>
@@ -267,14 +267,16 @@
         </div>
       </section>
 
-      <section class="services pt-36 pb-36">
+      <section
+        class="services pt-12 md:pt-20 lg:pt-28 xl:pt-36 pb-16 md:pb-20 lg:pb-28 xl:pb-36"
+      >
         <div
           class="container mx-auto px-3 sm:px-3 md:px-5 lg:px-10 xl:px-24 relative"
         >
           <img
             src="./images/line.png"
             alt="line"
-            class="absolute right-0 -top-40 -z-10"
+            class="hidden md:block absolute right-0 -top-40 -z-10"
           />
           <div class="services__title">
             <h2
@@ -282,65 +284,69 @@
             >
               Why we are the Best?
             </h2>
-            <p class="text-[#555] text-lg max-w-[671px] mt-7 leading-8">
+            <p
+              class="text-[#555] text-lg max-w-[671px] mt-3 md:mt-5 lg:mt-7 leading-8"
+            >
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley...
             </p>
           </div>
           <div
-            class="services__wrapper flex justify-around border border-blue-500"
+            class="services__wrapper flex flex-col-reverse md:flex-row justify-between items-center"
           >
-            <ul class="w-[50%] border border-red-500">
+            <ul class="w-full md:w-[60%] xl:w-1/2">
               <li
-                class="card flex items-center px-16 py-10 hover:bg-green-200 duration-200 rounded-lg my-4"
+                class="card hover:bg-green-100 duration-200 rounded-lg flex flex-col md:flex-row justify-between items-start md:items-center max-w-full md:max-w-[500px] px-5 md:px-[30px] lg:px-[60px] py-5 md:py-5 lg:py-7 xl:py-10 my-5"
               >
                 <div
-                  class="w-[80px] h-[80px] rounded-full bg-green-100 flex justify-center items-center mr-6"
+                  class="w-[70px] md:w-[60px] lg:w-[80px] h-[70px] md:h-[60px] lg:h-[80px] rounded-full bg-green-100 flex justify-center items-center mr-5"
                 >
                   <img src="./images/delivery-man-icon.svg" alt="icon" />
                 </div>
-                <div class="w-4/5">
+                <div
+                  class="mt-4 md:mt-0 max-w-full md:max-w-[270px] lg:max-w-[280px]"
+                >
                   <h4 class="font-bold text-xl mb-2">
                     Fasted delivery Service
                   </h4>
-                  <p class="text-sm text-slate-500">
+                  <p class="text-sm text-slate-500 leading-5">
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry.
                   </p>
                 </div>
               </li>
               <li
-                class="card flex items-center px-16 py-10 hover:bg-green-200 duration-200 rounded-lg my-4"
+                class="card hover:bg-green-100 duration-200 rounded-lg flex flex-col md:flex-row justify-between items-start md:items-center max-w-full md:max-w-[500px] px-5 md:px-[30px] lg:px-[60px] py-5 md:py-5 lg:py-7 xl:py-10 my-5"
               >
                 <div
-                  class="w-[80px] h-[80px] rounded-full bg-green-100 flex justify-center items-center mr-6"
+                  class="w-[70px] md:w-[60px] lg:w-[80px] h-[70px] md:h-[60px] lg:h-[80px] rounded-full bg-green-100 flex justify-center items-center mr-5"
                 >
-                  <img src="./images/delivery-man-icon.svg" alt="icon" />
+                  <img src="./images/shopping-icon.svg" alt="icon" />
                 </div>
-                <div class="w-4/5">
-                  <h4 class="font-bold text-xl mb-2">
-                    Fasted delivery Service
-                  </h4>
-                  <p class="text-sm text-slate-500">
+                <div
+                  class="mt-4 md:mt-0 max-w-full md:max-w-[270px] lg:max-w-[280px]"
+                >
+                  <h4 class="font-bold text-xl mb-2">Online order Service</h4>
+                  <p class="text-sm text-slate-500 leading-5">
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry.
                   </p>
                 </div>
               </li>
               <li
-                class="card flex items-center px-16 py-10 hover:bg-green-200 duration-200 rounded-lg my-4"
+                class="card hover:bg-green-100 duration-200 rounded-lg flex flex-col md:flex-row justify-between items-start md:items-center max-w-full md:max-w-[500px] px-5 md:px-[30px] lg:px-[60px] py-5 md:py-5 lg:py-7 xl:py-10 my-5"
               >
                 <div
-                  class="w-[80px] h-[80px] rounded-full bg-green-100 flex justify-center items-center mr-6"
+                  class="w-[70px] md:w-[60px] lg:w-[80px] h-[70px] md:h-[60px] lg:h-[80px] rounded-full bg-green-100 flex justify-center items-center mr-5"
                 >
-                  <img src="./images/delivery-man-icon.svg" alt="icon" />
+                  <img src="./images/fast-time-icon.svg" alt="icon" />
                 </div>
-                <div class="w-4/5">
-                  <h4 class="font-bold text-xl mb-2">
-                    Fasted delivery Service
-                  </h4>
-                  <p class="text-sm text-slate-500">
+                <div
+                  class="mt-4 md:mt-0 max-w-full md:max-w-[270px] lg:max-w-[280px]"
+                >
+                  <h4 class="font-bold text-xl mb-2">24/8 Service</h4>
+                  <p class="text-sm text-slate-500 leading-5">
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry.
                   </p>
@@ -353,56 +359,59 @@
                 />
               </li>
             </ul>
-            <div class="w-[40%] border border-red-500">
+            <div class="w-full md:w-[44%] mt-8 md:mt-0 mb-4 md:mb-0">
               <img src="./images/bola.png" alt="service-img" class="w-full" />
             </div>
           </div>
         </div>
       </section>
 
-      <!-- <section class="special pt-20 pb-36 bg-green-50 relative">
-        <img
-          src="./images/fresh-melientha.png"
-          alt="melientha"
-          class="absolute bottom-0 right-0"
-        />
+      <section
+        class="special pt-14 md:pt-20 pb-16 sm:pb-28 md:pb-36 bg-green-50"
+      >
         <div class="container mx-auto px-3 sm:px-3 md:px-5 lg:px-10 xl:px-24">
-          <div class="special__wrapper flex justify-between">
-            <div class="">
+          <div
+            class="special__wrapper flex items-center lg:items-stretch justify-between md:lg-container"
+          >
+            <div class="w-1/2 hidden md:block">
               <img
                 src="./images/special-img.jpg"
                 alt="special-img"
-                class="w-[600px] rounded-md"
+                class="w-full xl:w-[600px] rounded-md"
               />
             </div>
-            <div class="w-1/2">
-              <h2 class="text-6xl font-bold max-w-[671px] leading-[90px]">
+            <div class="w-full md:w-1/2 md:pl-8 2xl:pl-0">
+              <h2
+                class="font-bold max-w-[671px] text-4xl leading-[55px] lg:text-5xl lg:leading-[65px] 2xl:text-6xl 2xl:leading-[90px]"
+              >
                 Explor Our Special Items
               </h2>
-              <p class="text-[#555] text-lg max-w-[671px] mt-7 leading-8">
+              <p
+                class="text-[#555] text-lg max-w-[671px] mt-5 lg:mt-7 leading-8"
+              >
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s, when an unknown printer took a
                 galley...
               </p>
-              <div class="mx-auto flex items-center mt-10">
+              <div class="flex items-center mt-10">
                 <a href="#" class="text-lg">Explor Now</a>
                 <div
-                  class="w-[60px] h-[60px] bg-green-600 hover:bg-green-700 duration-200 text-white flex items-center justify-center text-2xl rounded-full ml-4"
+                  class="w-[40px] h-[40px] md:w-[60px] md:h-[60px] bg-green-600 hover:bg-green-700 duration-200 text-white flex items-center justify-center text-2xl rounded-full ml-4"
                 >
                   <img
                     src="./images/arrow-icon.svg"
                     alt="arrow-icon"
-                    class="w-[30px]"
+                    class="w-[15px] md:w-[30px]"
                   />
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
 
-      <!-- <section class="customers pt-24 pb-16">
+      <section class="customers pt-24 pb-16">
         <div class="container mx-auto px-3 sm:px-3 md:px-5 lg:px-10 xl:px-24">
           <div class="customers__top flex justify-between">
             <div class="w-1/2">
@@ -454,7 +463,7 @@
                 </li>
               </ul>
             </div>
-            <div class="w-[45%]">
+            <div class="w-[45%] border-emerald-600 border-2 relative">
               <div
                 class="w-[500px] h-[500px] rounded-full bg-green-100 relative overflow-hidden ml-auto"
               >
@@ -464,9 +473,57 @@
                   class="w-100 absolute bottom-0 left-1/2 -translate-x-1/2"
                 />
               </div>
+              <div
+                class="users inline-block w-[220px] h-[80px] bg-white shadow-lg py-1 px-4 rounded-xl absolute bottom-[25%] left-[15%]"
+              >
+                <div class="star-icons flex mb-1">
+                  <i class="bx bxs-star text-yellow-400 text-xl"></i>
+                  <i class="bx bxs-star text-yellow-400 text-xl"></i>
+                  <i class="bx bxs-star text-yellow-400 text-xl"></i>
+                  <i class="bx bxs-star text-yellow-400 text-xl"></i>
+                  <i class="bx bxs-star-half text-yellow-400 text-xl"></i>
+                </div>
+                <div class="user__images relative">
+                  <img
+                    src="./images/user1.svg"
+                    alt="user1-img"
+                    class="absolute top-0 left-0"
+                  />
+                  <img
+                    src="./images/user2.svg"
+                    alt="user2-img"
+                    class="absolute top-0 left-[22px]"
+                  />
+                  <img
+                    src="./images/user3.svg"
+                    alt="user3-img"
+                    class="absolute top-0 left-[44px]"
+                  />
+                  <img
+                    src="./images/user4.svg"
+                    alt="user4-img"
+                    class="absolute top-0 left-[66px]"
+                  />
+                  <img
+                    src="./images/user5.svg"
+                    alt="user5-img"
+                    class="absolute top-0 left-[88px]"
+                  />
+                  <img
+                    src="./images/user6.svg"
+                    alt="user6-img"
+                    class="absolute top-0 left-[110px]"
+                  />
+                  <div
+                    class="w-[32px] h-[32px] rounded-full bg-green-50 flex items-center justify-center absolute top-0 left-[132px] text-3xl"
+                  >
+                    +
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="customers__bottom flex py-24">
+          <!-- <div class="customers__bottom flex py-24">
             <div class="w-1/3 relative">
               <img
                 src="./images/tell.png"
@@ -504,9 +561,9 @@
                 </a>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
-      </section>  -->
+      </section>
     </main>
     <!-- MAIN SECTION END -->
 
