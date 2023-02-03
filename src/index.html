@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lesson-9. Tailwind</title>
+    <title>Organick Food</title>
     <!-- tailwind css -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- box-icons  -->
@@ -33,10 +33,8 @@
   <body>
     <!-- HEADER SECTION START -->
     <header class="py-4 sm:py-6 lg:py-12 shadow-md bg-white">
-      <div class="container mx-auto px-3 sm:px-3 md:px-0">
-        <nav
-          class="nav flex justify-between sm:justify-between md:justify-around items-center h-14"
-        >
+      <div class="container mx-auto px-3 sm:px-3 md:px-5 lg:px-10 xl:px-24">
+        <nav class="nav flex justify-between items-center h-14">
           <ul class="nav__list hidden sm:hidden md:hidden lg:flex">
             <li class="nav__list--item mr-8">
               <a
@@ -74,20 +72,30 @@
               class="hover:scale-105 duration-200"
             />
           </a>
-          <ul class="nav__menu flex justify-between items-center">
-            <li class="nav_menu--item hidden sm:hidden md:block">
+          <div
+            class="burder border-slate-400 border-solid border rounded-md w-[40px] h-[40px] flex justify-center items-center md:hidden"
+          >
+            <i class="bx bx-menu text-4xl text-gray-600"></i>
+          </div>
+          <ul class="nav__menu justify-between items-center hidden md:flex">
+            <div
+              class="bg-green-100 h-10 w-10 rounded-full hiddden md:flex justify-center items-center lg:hidden"
+            >
+              <i class="bx bx-menu text-2xl"></i>
+            </div>
+            <li class="nav_menu--item md:ml-4 lg:ml-8">
               <span
                 class="bg-green-100 h-10 w-10 flex justify-center items-center rounded-full"
                 ><i class="bx bx-search text-xl"></i
               ></span>
             </li>
-            <li class="nav_menu--item ml-8 hidden sm:hidden md:block">
+            <li class="nav_menu--item md:ml-4 lg:ml-8">
               <span
                 class="bg-green-100 h-10 w-10 flex justify-center items-center rounded-full"
                 ><i class="bx bx-cart text-xl"></i
               ></span>
             </li>
-            <li class="nav_menu--item ml-8">
+            <li class="nav_menu--item md:ml-4 lg:ml-8">
               <button
                 class="register-btn bg-green-600 py-2 px-6 rounded-lg text-white hover:bg-green-700 duration-200 active:bg-green-800"
               >
@@ -102,7 +110,7 @@
 
     <!-- MODAL WINDOW START -->
     <div
-      class="modal-window bg-[#000000c3] w-full min-h-screen fixed top-0 z-10 hidden duration-300"
+      class="modal-window bg-[#000000c3] w-full min-h-screen fixed top-0 z-20 hidden duration-300"
     >
       <div
         class="modal-content w-[40%] bg-white mx-auto mt-20 rounded-xl overflow-hidden duration-200"
@@ -168,15 +176,17 @@
     <!-- MAIN SECTION START -->
     <main>
       <section class="intro bg-green-50">
-        <div class="container mx-auto px-6 relative">
+        <div
+          class="container mx-auto px-3 sm:px-3 md:px-5 lg:px-10 xl:px-24 relative"
+        >
           <img
             src="./images/fresh-melientha.png"
             alt="melientha"
-            class="absolute left-12 -top-10"
+            class="absolute -top-6 left-0 w-[50%] opacity-80 sm:-top-7 sm:-left-4 sm:w-[45%] md:-top-10 md:left-0 md:w-[35%] md:opacity-80"
           />
-          <div class="intro__wrapper">
+          <div class="intro__wrapper relative z-10">
             <h1
-              class="text-6xl text-center font-bold max-w-[783px] pt-[93px] mx-auto leading-[90px]"
+              class="text-4xl md:text-5xl lg:text-6xl text-center font-bold max-w-[783px] pt-[93px] mx-auto leading-[55px] md:leading-[90px]"
             >
               Organic Fruit & Vegetables
             </h1>
@@ -193,58 +203,62 @@
           >
             <a href="#" class="text-lg"> Order Now</a>
             <div
-              class="w-[60px] h-[60px] bg-green-600 hover:bg-green-700 duration-200 text-white flex items-center justify-center text-2xl rounded-full ml-4"
+              class="w-[40px] h-[40px] md:w-[60px] md:h-[60px] bg-green-600 hover:bg-green-700 duration-200 text-white flex items-center justify-center text-2xl rounded-full ml-4"
             >
               <img
                 src="./images/arrow-icon.svg"
                 alt="arrow-icon"
-                class="w-[30px]"
+                class="w-[15px] md:w-[30px]"
               />
             </div>
           </div>
-          <div class="intro__product flex justify-around">
+          <div
+            class="intro__product mt-8 flex justify-around items-center lg:items-stretch"
+          >
             <img
               src="./images/vegetables-fruits.png"
               alt="intro-img"
-              class="w-[862px]"
+              class="hidden md:block md:w-2/3 lg:w-[862px]"
             />
-            <div class="intro__product--info flex flex-col">
+            <div
+              class="w-full md:w-1/3 lg:w-auto intro__product--info flex flex-col"
+            >
               <div
-                class="card hover:shadow-md duration-200 bg-white flex items-center py-5 px-10 rounded-md mb-8"
+                class="card hover:shadow-md duration-200 bg-white flex items-center py-5 px-10 mb-4 md:py-3 md:px-6 lg:py-5 lg:px-10 rounded-md lg:mb-8"
               >
                 <div
-                  class="w-[56px] h-[56px] rounded-full flex justify-center items-center bg-green-100 mr-5"
+                  class="w-[56px] h-[56px] rounded-full flex justify-center items-center bg-green-100 sm:mr-6 md:mr-4 lg:mr-5"
                 >
                   <img src="./images/user-icon.svg" alt="user-icon" />
                 </div>
                 <div>
-                  <h3 class="text-5xl font-light">30K</h3>
+                  <h3 class="sm:text-4xl lg:text-5xl font-light">30K</h3>
                   <p class="text-lg mt-1 text-center">User Order</p>
                 </div>
               </div>
               <div
-                class="card hover:shadow-md duration-200 bg-white flex items-center py-5 px-10 rounded-md mb-8"
+                class="card hover:shadow-md duration-200 bg-white flex items-center py-5 px-10 mb-4 md:py-3 md:px-6 lg:py-5 lg:px-10 rounded-md lg:mb-8"
               >
                 <div
-                  class="w-[56px] h-[56px] rounded-full flex justify-center items-center bg-green-100 mr-5"
+                  class="w-[56px] h-[56px] rounded-full flex justify-center items-center bg-green-100 sm:mr-6 md:mr-4 lg:mr-5"
                 >
                   <img src="./images/star-icon.svg" alt="star-icon" />
                 </div>
                 <div>
-                  <h3 class="text-5xl font-light">20K</h3>
+                  <h3 class="md:text-4xl lg:text-5xl font-light">20K</h3>
                   <p class="text-lg mt-1 text-center">Reviews(4.8)</p>
                 </div>
               </div>
               <div
-                class="card hover:shadow-md duration-200 bg-white flex items-center py-5 px-10 rounded-md mb-8"
+                class="card hover:shadow-md duration-200 bg-white flex items-center py-5 px-10 mb-4 md:py-3 md:px-6 lg:py-5 lg:px-10 rounded-md lg:mb-8"
               >
                 <div
-                  class="w-[56px] h-[56px] rounded-full flex justify-center items-center bg-green-100 mr-5"
+                  class="w-[56px] h-[56px] rounded-full flex justify-center items-center bg-green-100 sm:mr-6 md:mr-4 lg:mr-5"
                 >
                   <img src="./images/sweets-icon.svg" alt="sweets-icon" />
                 </div>
                 <div>
-                  <h3 class="text-5xl font-light">300</h3>
+                  <h3 class="md:text-4xl lg:text-5xl font-light">300</h3>
                   <p class="text-lg mt-1 text-center">Items</p>
                 </div>
               </div>
@@ -254,14 +268,18 @@
       </section>
 
       <section class="services pt-36 pb-36">
-        <div class="container mx-auto px-6 relative">
+        <div
+          class="container mx-auto px-3 sm:px-3 md:px-5 lg:px-10 xl:px-24 relative"
+        >
           <img
             src="./images/line.png"
             alt="line"
             class="absolute right-0 -top-40 -z-10"
           />
           <div class="services__title">
-            <h2 class="text-6xl font-bold max-w-[671px] leading-[90px]">
+            <h2
+              class="text-4xl md:text-5xl lg:text-6xl font-bold max-w-[671px] leading-[55px] md:leading-[90px]"
+            >
               Why we are the Best?
             </h2>
             <p class="text-[#555] text-lg max-w-[671px] mt-7 leading-8">
@@ -270,8 +288,10 @@
               ever since the 1500s, when an unknown printer took a galley...
             </p>
           </div>
-          <div class="services__wrapper flex justify-between">
-            <ul class="w-[40%]">
+          <div
+            class="services__wrapper flex justify-around border border-blue-500"
+          >
+            <ul class="w-[50%] border border-red-500">
               <li
                 class="card flex items-center px-16 py-10 hover:bg-green-200 duration-200 rounded-lg my-4"
               >
@@ -333,20 +353,20 @@
                 />
               </li>
             </ul>
-            <div class="w-[40%]">
+            <div class="w-[40%] border border-red-500">
               <img src="./images/bola.png" alt="service-img" class="w-full" />
             </div>
           </div>
         </div>
       </section>
 
-      <section class="special pt-20 pb-36 bg-green-50 relative">
+      <!-- <section class="special pt-20 pb-36 bg-green-50 relative">
         <img
           src="./images/fresh-melientha.png"
           alt="melientha"
           class="absolute bottom-0 right-0"
         />
-        <div class="container px-6 mx-auto">
+        <div class="container mx-auto px-3 sm:px-3 md:px-5 lg:px-10 xl:px-24">
           <div class="special__wrapper flex justify-between">
             <div class="">
               <img
@@ -380,10 +400,10 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
-      <section class="customers pt-24 pb-16">
-        <div class="container mx-auto px-6">
+      <!-- <section class="customers pt-24 pb-16">
+        <div class="container mx-auto px-3 sm:px-3 md:px-5 lg:px-10 xl:px-24">
           <div class="customers__top flex justify-between">
             <div class="w-1/2">
               <h2 class="text-6xl font-bold max-w-[671px] leading-[90px] mb-8">
@@ -447,7 +467,7 @@
             </div>
           </div>
           <div class="customers__bottom flex py-24">
-            <div class="w-1/3 border relative">
+            <div class="w-1/3 relative">
               <img
                 src="./images/tell.png"
                 alt="tell"
@@ -459,7 +479,7 @@
                 class="absolute left-1/3 -translate-x-1/2 z-0 scale-90"
               />
             </div>
-            <div class="w-2/3 border">
+            <div class="w-2/3">
               <a
                 href="#"
                 class="px-6 py-2 bg-green-100 capitalize rounded-[25px] inline-block"
@@ -486,13 +506,13 @@
             </div>
           </div>
         </div>
-      </section>
+      </section>  -->
     </main>
     <!-- MAIN SECTION END -->
 
     <!-- FOOTER SECTION START -->
-    <footer class="footer py-20 bg-green-50" id="footer">
-      <div class="container mx-auto px-6">
+    <!-- <footer class="footer py-20 bg-green-50" id="footer">
+      <div class="container mx-auto px-3 sm:px-3 md:px-5 lg:px-10 xl:px-24">
         <ul class="footer_wrapper flex">
           <li class="w-1/4">
             <img src="./images/logo-icon.svg" alt="logo" />
@@ -527,7 +547,7 @@
           </li>
         </ul>
       </div>
-    </footer>
+    </footer> -->
     <!-- FOOTER SECTION END -->
 
     <!-- script files -->
