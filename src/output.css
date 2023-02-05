@@ -1905,6 +1905,11 @@ video {
     padding-right: 1.5rem;
   }
 
+  .lg\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
   .lg\:pt-28 {
     padding-top: 7rem;
   }

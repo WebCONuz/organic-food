@@ -9,6 +9,17 @@ window.onload = function () {
   if (window.scrollY > 0) {
     header.classList.add("z-20");
   }
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 0) {
+      header.classList.remove("lg:py-12");
+      header.classList.add("lg:py-4");
+    } else {
+      header.classList.remove("lg:py-4");
+      header.classList.add("lg:py-12");
+    }
+  });
+
   burger.forEach((item, index) => {
     item.addEventListener("click", () => {
       if (burgerIcon[index].classList.contains("bx-menu")) {
