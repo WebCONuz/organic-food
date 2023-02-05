@@ -35,10 +35,12 @@
   </head>
   <body>
     <!-- HEADER SECTION START -->
-    <header class="py-4 sm:py-6 lg:py-12 shadow-md bg-white">
+    <header
+      class="header py-4 sm:py-6 lg:py-12 shadow-md bg-white sticky top-0 left-0 w-full duration-200 z-20"
+    >
       <div class="container mx-auto px-3 sm:px-3 md:px-5 lg:px-10 xl:px-24">
         <nav class="nav flex justify-between items-center h-14">
-          <ul class="nav__list hidden sm:hidden md:hidden lg:flex">
+          <ul class="nav__list hidden lg:flex">
             <li class="nav__list--item mr-8">
               <a
                 href="#"
@@ -76,13 +78,13 @@
             />
           </a>
           <div
-            class="burder border-slate-400 border-solid border rounded-md w-[40px] h-[40px] flex justify-center items-center md:hidden"
+            class="burger border-slate-400 border-solid border rounded-md w-[40px] h-[40px] flex justify-center items-center md:hidden"
           >
             <i class="bx bx-menu text-4xl text-gray-600"></i>
           </div>
           <ul class="nav__menu justify-between items-center hidden md:flex">
             <div
-              class="bg-green-100 h-10 w-10 rounded-full hiddden md:flex justify-center items-center lg:hidden"
+              class="burger bg-green-100 h-10 w-10 rounded-full hiddden md:flex justify-center items-center lg:hidden"
             >
               <i class="bx bx-menu text-2xl"></i>
             </div>
@@ -104,6 +106,61 @@
               >
                 Register Now
               </button>
+            </li>
+          </ul>
+          <ul
+            class="responsive-nav__list flex flex-col items-center justify-center fixed duration-200 -left-full top-[88px] lg:hidden sm:top-[104px] w-full h-[88vh] border-t border-gray-400 z-20 bg-white"
+          >
+            <li class="nav__list--item mb-8">
+              <a
+                href="#"
+                class="nav__list--item-link text-2xl hover:text-green-600 active:text-slate-400 duration-200"
+                >About Us</a
+              >
+            </li>
+            <li class="nav__list--item mb-8">
+              <a
+                href="#"
+                class="nav__list--item-link text-2xl hover:text-green-600 active:text-slate-400 duration-200"
+                >Services</a
+              >
+            </li>
+            <li class="nav__list--item mb-8">
+              <a
+                href="#"
+                class="nav__list--item-link text-2xl hover:text-green-600 active:text-slate-400 duration-200"
+                >Menu</a
+              >
+            </li>
+            <li class="nav__list--item mb-8">
+              <a
+                href="#"
+                class="nav__list--item-link text-2xl hover:text-green-600 active:text-slate-400 duration-200"
+                >Contact</a
+              >
+            </li>
+            <li class="nav__list--item md:hidden">
+              <ul class="nav__menu flex justify-center items-center mb-8">
+                <li class="nav_menu--item">
+                  <span
+                    class="bg-green-100 h-10 w-10 flex justify-center items-center rounded-full"
+                    ><i class="bx bx-search text-xl"></i
+                  ></span>
+                </li>
+                <li class="nav_menu--item ml-4">
+                  <span
+                    class="bg-green-100 h-10 w-10 flex justify-center items-center rounded-full"
+                    ><i class="bx bx-cart text-xl"></i
+                  ></span>
+                </li>
+              </ul>
+              <div class="">
+                <button
+                  class="register-btn bg-green-600 py-2 px-6 rounded-lg text-white hover:bg-green-700 duration-200 active:bg-green-800"
+                >
+                  Register Now
+                </button>
+              </div>
             </li>
           </ul>
         </nav>
