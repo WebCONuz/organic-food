@@ -1,8 +1,7 @@
-window.onload = function () {
+window.addEventListener("DOMContentLoaded", function () {
   //Navbar & Menu -----------------------------
   const responsiveNav = document.querySelector(".responsive-nav__list");
   const header = document.querySelector(".header");
-  console.log(responsiveNav);
   const burger = document.querySelectorAll(".burger");
   const burgerIcon = document.querySelectorAll(".burger > i");
 
@@ -17,6 +16,29 @@ window.onload = function () {
     } else {
       header.classList.remove("lg:py-4");
       header.classList.add("lg:py-12");
+    }
+
+    const introHeight = document.querySelector(".intro").clientHeight;
+    const serviceHeight = document.querySelector(".services").clientHeight;
+    const specialHeight = document.querySelector(".special").clientHeight;
+    const customersHeight = document.querySelector(".customers").clientHeight;
+    const headerHeight = header.clientHeight;
+
+    if (
+      window.scrollY >
+      introHeight + headerHeight + serviceHeight + specialHeight - 360
+    ) {
+      console.log("Customer");
+    } else if (
+      window.scrollY >
+      introHeight + headerHeight + serviceHeight - 360
+    ) {
+      console.log("Special");
+    } else if (window.scrollY > introHeight + headerHeight - 360) {
+      console.log("Service");
+    } else {
+      // console.log(window.scrollY, introHeight + headerHeight + 260);
+      console.log("intro");
     }
   });
 
@@ -74,4 +96,4 @@ window.onload = function () {
       },
     },
   });
-};
+});

@@ -28,6 +28,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- aos-animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- favicon -->
     <link rel="icon" type="image/x-icon" href="./images/logo-icon.svg" />
     <!-- main css -->
@@ -248,7 +250,11 @@
             alt="melientha"
             class="absolute -top-6 left-0 w-[50%] opacity-80 sm:-top-7 sm:-left-4 sm:w-[45%] md:-top-10 md:left-0 md:w-[35%] md:opacity-80"
           />
-          <div class="intro__wrapper relative z-10">
+          <div
+            class="intro__wrapper relative z-10"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <h1
               class="text-4xl md:text-5xl lg:text-6xl text-center font-bold max-w-[783px] pt-[93px] mx-auto leading-[55px] md:leading-[90px]"
             >
@@ -264,6 +270,8 @@
           </div>
           <div
             class="intro__link mx-auto flex items-center justify-center mt-10"
+            data-aos="fade-up"
+            data-aos-duration="1000"
           >
             <a href="#" class="text-lg"> Order Now</a>
             <div
@@ -283,6 +291,8 @@
               src="./images/vegetables-fruits.png"
               alt="intro-img"
               class="hidden md:block md:w-2/3 lg:w-[862px]"
+              data-aos="fade-right"
+              data-aos-duration="1000"
             />
             <div
               class="w-full md:w-1/3 lg:w-auto intro__product--info flex flex-col"
@@ -342,7 +352,11 @@
             alt="line"
             class="hidden md:block absolute right-0 -top-40 -z-10"
           />
-          <div class="services__title">
+          <div
+            class="services__title"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <h2
               class="font-bold max-w-[671px] text-3xl leading-[40px] sm:text-4xl sm:leading-[55px] lg:text-5xl lg:leading-[65px] 2xl:text-6xl 2xl:leading-[90px]"
             >
@@ -423,7 +437,11 @@
                 />
               </li>
             </ul>
-            <div class="w-full md:w-[44%] mt-8 md:mt-0 mb-4 md:mb-0">
+            <div
+              class="w-full md:w-[44%] mt-8 md:mt-0 mb-4 md:mb-0"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
               <img src="./images/bola.png" alt="service-img" class="w-full" />
             </div>
           </div>
@@ -437,14 +455,22 @@
           <div
             class="special__wrapper flex items-center lg:items-stretch justify-between md:lg-container"
           >
-            <div class="w-1/2 hidden md:block">
+            <div
+              class="w-1/2 hidden md:block"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
               <img
                 src="./images/special-img.jpg"
                 alt="special-img"
                 class="w-full xl:w-[600px] rounded-md"
               />
             </div>
-            <div class="w-full md:w-1/2 md:pl-8 2xl:pl-0">
+            <div
+              class="w-full md:w-1/2 md:pl-8 2xl:pl-0"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
               <h2
                 class="font-bold max-w-[671px] text-3xl leading-[40px] sm:text-4xl sm:leading-[55px] lg:text-5xl lg:leading-[65px] 2xl:text-6xl 2xl:leading-[90px]"
               >
@@ -483,6 +509,8 @@
             <div class="w-full lg:w-1/2">
               <h2
                 class="font-bold mb-0 max-w-[530px] text-3xl leading-[40px] sm:text-4xl sm:leading-[55px] lg:max-w-[671px] lg:text-5xl lg:leading-[65px] 2xl:mb-8 2xl:leading-[90px] 2xl:text-6xl"
+                data-aos="fade-up"
+                data-aos-duration="1000"
               >
                 What Our Customers About Us saying
               </h2>
@@ -559,7 +587,11 @@
                 </li>
               </ul>
             </div>
-            <div class="flex items-center w-full mb-12 lg:mb-0 lg:w-[45%]">
+            <div
+              class="flex items-center w-full mb-12 lg:mb-0 lg:w-[45%]"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
               <div
                 class="rounded-full relative w-[250px] h-[250px] mx-auto lg:mx-0 sm:w-[430px] sm:h-[430px] lg:ml-auto xl:w-[500px] xl:h-[500px]"
               >
@@ -746,6 +778,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="./script/app.js"></script>
   </body>
 </html>
